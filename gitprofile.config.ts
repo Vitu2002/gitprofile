@@ -9,7 +9,7 @@ const CONFIG = {
    * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
-  base: '/gitprofile/',
+  base: '/',
   projects: {
     github: {
       display: true, // Display GitHub projects?
@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects:['Vitu2002/yomu-web'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['Vitu2002/yomu-web'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
@@ -34,10 +34,11 @@ const CONFIG = {
       projects: [
         {
           title: 'YomuMangás',
-          description: 'Um leitor de mangás e novels, integrado com o AniList e MAL.',
-            imageUrl: 'https://yomumangas.com/yomu.svg',
+          description:
+            'Um leitor de mangás e novels, integrado com o AniList e MAL.',
+          imageUrl: 'https://yomumangas.com/yomu-icon.svg',
           link: 'https://yomumangas.com',
-        }
+        },
       ],
     },
   },
@@ -69,24 +70,23 @@ const CONFIG = {
     email: 'contact@vitu2002.dev',
   },
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'JavaScript',
+    'Node.js',
     'TypeScript',
     'React.js',
-    'Node.js',
     'Nest.js',
-    'NextJS'
+    'NextJS',
     'MySQL',
     'PostgreSQL',
+    'Redis',
+    'MongoDB',
     'Git',
     'Docker',
     'CSS',
     'Sass/Scss',
-    'Antd',
-    'Tailwind',
   ],
   experiences: [],
   certifications: [],
@@ -95,7 +95,7 @@ const CONFIG = {
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
-    username: 'Vitu2002', // to hide blog section, keep it empty
+    username: '', // to hide blog section, keep it empty
     limit: 2, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
@@ -107,7 +107,7 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'forest',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
